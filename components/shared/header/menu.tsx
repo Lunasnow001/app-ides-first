@@ -7,13 +7,13 @@ export default function Menu() {
     <div className="flex justify-end">
       <nav className="flex gap-3 w-full">
         <Link href="/signin" className="header-button">
-          <UserIcon className="w-8 h-8" />
-          <span className="font-bold">Sign in</span>
+         Hello, Sign in
         </Link>
 
         <Link href="/cart" className="header-button">
+        <div className="flex items-end">
           <ShoppingCartIcon className="w-8 h-8" />
-          <span className="font-bold">Cart</span>
+          </div>
         </Link>
       </nav>
     </div>

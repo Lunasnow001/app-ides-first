@@ -23,7 +23,8 @@ export default function index() {
                 height={40}
                 alt={`${APP_NAME} logo`}
               />
-              {APP_NAME}
+              <span className="pl-3">{APP_NAME}</span>
+              <span className="pl-3 text-rose-600"> Shop</span>
             </Link>
           </div>
           <div className="md:block flex-1 hidden max-w-xl">
@@ -38,7 +39,7 @@ export default function index() {
       <div className="flex items-center bg-gray-800 mb-[1px] px-3">
         <Button
           variant="ghost"
-          className="flex items-center gap-1 text-base [&_svg]:size-6 header-button"
+          className="flex items-center gap-1 text-base [&_svg]:size-6 dark header-button"
         >
           <MenuIcon />
           All
@@ -50,7 +51,7 @@ export default function index() {
               key={menu.href}
               className="!p-2 header-button"
             >
-              {"Header." + menu.name}
+              {menu.name}
             </Link>
           ))}
         </div>
